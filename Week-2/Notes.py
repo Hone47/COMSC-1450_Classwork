@@ -47,3 +47,11 @@ print("2026")
 print("Welcom to the python\nFall\n2026")
 
 
+print('Hello to  "UST"')
+
+#shorthand to concatotion
+print("Hello to the python class" , 2026, "UST", 1500)
+print(1,2,3,4, sep="%")
+
+print("Welcome", end=" ")
+print("2026")
