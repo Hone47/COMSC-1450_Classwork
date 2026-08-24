@@ -55,3 +55,11 @@ print(1,2,3,4, sep="%")
 
 print("Welcome", end=" ")
 print("2026")
+
+x = '''Hello,
+this is how you store a
+paragraph 
+in python'''
+
+Name = input("please enter your name ")
+print("Your name is", Name, "welcome to python")
