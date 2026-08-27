@@ -61,5 +61,14 @@ this is how you store a
 paragraph 
 in python'''
 
-Name = input("please enter your name ")
-print("Your name is", Name, "welcome to python")
+# Name = input("please enter your name ")
+# print("Your name is", Name, "welcome to python")
+
+num_1 = int(input("first number?"))
+num_2 = int(input("second number?"))
+
+print("your first num is", num_1, "and your second num is", num_2)
+
+total = num_2 + num_1
+
+print("Your total is", total)
