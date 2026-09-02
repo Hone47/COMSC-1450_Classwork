@@ -50,4 +50,4 @@ usd_price = round(float(input("Enter the price per item in USD:")),2)
 usd_totalprice = usd_price * num_items
 euro_totalprice = round(usd_totalprice * exchange_rate,2)
 #print(f"variable:.2f") is used to format so prices display 2 decimal places over.
-print("Customer Profile:", name,"\nCustomer Profile:", f"{usd_totalprice:.2f}","\nEUR total: €", f"{euro_totalprice:.2f}")
+print("Customer Profile:", name,"\nCustomer Profile:", f"{usd_totalprice:.2f}","\nEUR total: €", f"{euro_totalprice:.2f}","\nSystem Complete")
