@@ -36,7 +36,7 @@ membership = input("Premium membership y/n?")
 weight = int(input("Weight of package?"))
 cost = 0
 if(weight < 0): 
-  if(weight <= 2):
+  if(weight <= 2 ):
     if(membership =="y"):
       cost = 0
     else:
@@ -70,9 +70,9 @@ if(order_cost > 0 and distance > 0):
   if(order_cost >= 50):
     delivery_fee = 0
     
-  if(order_cost > 30 and delivery_fee < 50 and distance <=5):
+  if(order_cost > 30 and delivery_fee < 50 and distance <= 5):
     delivery_fee = 5
-  elif(order_cost > 30 and delivery_fee < 50 and distance <=5):
+  elif(order_cost > 30 and delivery_fee < 50 and distance > 5):
     delivery_fee = 7
 else:
   print("Invalid input")
