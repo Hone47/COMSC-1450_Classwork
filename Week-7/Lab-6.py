@@ -10,9 +10,24 @@ def validate_acess_code(raw_code):
   else:
     return False
 
-raw_code = input("Enter access code")
-is_valid = validate_acess_code(raw_code)
-if is_valid:
-  print("sucess")
-else:
-  print("access denied")
+def audit_text_stream(flagged_word):
+  occurrence_total = 0
+  while True:
+    sentence = input("Enter your sentence")
+    if(sentence.lower() == "exit"):
+     break
+    else:
+      occurrence_total += sentence.lower().count(flagged_word)
+  return occurrence_total
+    
+
+ 
+  # raw_code = input("Enter access code")
+  # is_valid = validate_acess_code(raw_code)
+  # if is_valid:
+  #   print("sucess")
+  # else:
+  #   print("access denied")
+print(audit_text_stream("security"))
+  
+  
