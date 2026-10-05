@@ -76,3 +76,6 @@ print(vowels("hello"))
 # Define a function named get_rectangle_stats that takes two parameters: length
 # and width. Inside the body, calculate and return the area (length × width) of the
 # rectangle.
+
+def get_rectangle_stats(length, width):
+  return length * width;
