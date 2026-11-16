@@ -1,3 +1,5 @@
+
+'''
 # Problem 1
 x ="hello"
 # print(dir(x))
@@ -22,12 +24,17 @@ def audit_text_stream(flagged_word):
     
 
  
-  # raw_code = input("Enter access code")
-  # is_valid = validate_acess_code(raw_code)
-  # if is_valid:
-  #   print("sucess")
-  # else:
-  #   print("access denied")
-print(audit_text_stream("security"))
-  
-  
+'''
+with open("/Users/danny/Classwork/COMSC-1450_Classwork/Week-7/data.txt", "r") as infile:
+  with open("/Users/danny/Classwork/COMSC-1450_Classwork/Week-7/data2.txt", "w")as outfile:
+    for i in infile:
+      outfile.write(i.upper())
+      
+  x = [] 
+  total = 0
+  for i in range(5):
+      n = int(input("enter a num"))
+      total += n
+      x.append(n)
+
+  print(total)

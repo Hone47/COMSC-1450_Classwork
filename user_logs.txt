@@ -1,0 +1,1 @@
+[FLIGHT]Base : 100| Total Fare: 170[FITNESS] Activity: 332 | Calories Burned: 165
