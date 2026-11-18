@@ -1,22 +1,97 @@
-class Student:
-  def __init__(self,n,a):
-    self.name = n
-    self.a = a
+#q1
+def safe_divide():
+  while True:
+      try:
+          A = float(input("Enter numerator: "))
+          B = float(input("Enter denominator: "))
 
-s1 = Student("Sara", 18) 
+          result = A / B
+      except ValueError:
+          print("Please enter valid numbers.")
+      except ZeroDivisionError:
+          print("Cannot divide by zero. Try again.")
+      else:
+          print("Result:", result)
+          break
+safe_divide()
 
+#q2
+cart = ["Laptop", "Headphones", "Backpack", "Water Bottle"]
 
-class Book:
-  def __init__(self,n,a,p):
-    self.title = n
-    self.author = a
-    self.price = p
-  def get_details(self):
-    print(f'Title: {self.title}, Author: {self.author}, Price: ${self.price}')
-  def apply_discount(self):
-    self.price -= self.price*.10
-book1 = Book("b1", "john", 10)
-book2 = Book("b2", "john", 10)
+try:
+    index = int(input("Enter the index of the item you want to view: "))
+    print(cart[index])
 
-book2.apply_discount()
-book2.get_details()
+except ValueError:
+    print("Please enter a valid number.")
+
+except IndexError:
+    print("That index does not exist in the cart.")
+
+except Exception:
+    print("An unexpected error occurred.")cart = ["Laptop", "Headphones", "Backpack", "Water Bottle"]
+
+try:
+    index = int(input("Enter the index of the item you want to view: "))
+    print(cart[index])
+
+except ValueError:
+    print("Please enter a valid number.")
+
+except IndexError:
+    print("That index does not exist in the cart.")
+
+except Exception:
+    print("An unexpected error occurred.")
+    
+
+#q3
+file = None
+
+try:
+    file = open("grades.txt", "r")
+
+    grades = file.readlines()
+
+    total = 0
+
+    for grade in grades:
+        total += int(grade)
+
+    average = total / len(grades)
+
+    print("Average grade:", average)
+
+except FileNotFoundError:
+    print("Warning: grades.txt was not found.")
+
+except ValueError:
+    print("Warning: File contains invalid data.")
+
+finally:
+    if file is not None:
+        file.close()
+
+    print("File cleanup routine complete.")
+    
+#q4
+account_balance = 500
+
+try:
+    amount = int(input("Enter withdrawal amount: "))
+
+    if amount <= 0:
+        raise ValueError("Withdrawal must be greater than $0.")
+
+    if amount > account_balance:
+        raise ValueError("Insufficient funds available.")
+
+except ValueError as e:
+    print(e)
+
+else:
+    account_balance -= amount
+
+    print("Withdrawal successful!")
+    print("Remaining balance:", account_balance)
+

@@ -1,4 +1,4 @@
-# import math 
+import math 
 # import random as r
 
 
@@ -79,3 +79,28 @@ print(vowels("hello"))
 
 def get_rectangle_stats(length, width):
   return length * width;
+
+#q11
+
+def maximum(a,b):
+  return maximum(a,b)
+
+#q12
+def is_even(n):
+  if n%2 == 0:
+    return True
+  else:
+    return False
+
+#q13
+def circle_area(radius):
+  return math.pi * math.pow(radius)
+
+#q14
+def factorial(n):
+    result = 1
+
+    for i in range(1, n + 1):
+        result *= i
+
+    return result

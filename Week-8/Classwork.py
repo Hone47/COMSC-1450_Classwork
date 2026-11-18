@@ -84,3 +84,7 @@ tup = tuple(y)
 #14
 if(20 in tup):
   print("20 is in tuple")
+#15
+def checkTup(a,tup):
+  if (a in tup):
+    return True
